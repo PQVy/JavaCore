@@ -33,25 +33,25 @@ public class ManagerContact {
             System.out.println("5. Sort");
             System.out.println("6. Exit");
             System.out.print("Your choice: ");
-            int choice = in.nextInt();
+            String choice = in.nextLine();
             switch (choice) {
-                case 1:
+                case "1":
                     phoneBook.insertPhone(name, phone);
                     break;
-                case 2:
+                case "2":
                     phoneBook.removePhone(name);
                     break;
-                case 3:
+                case "3":
                     phoneBook.updatePhone(name, phone);
                     break;
-                case 4:
+                case "4":
                     phoneBook.searchPhone(name);
                     break;
-                case 5:
+                case "5":
                     phoneBook.sort();
                     phoneBook.viewPhoneList();
                     break;
-                case 6:
+                case "6":
                     i = false;
                     break;
                 default:
